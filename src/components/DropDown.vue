@@ -122,7 +122,7 @@ margin-right: 10px;
     }
     .menu__btn {
         display:inline-block;
-        width: 30px;
+        width: 40px;
         height: 30px;
         border: none;
         padding: 0;
