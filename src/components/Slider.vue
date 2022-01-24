@@ -1,7 +1,7 @@
 <template>
-<div class="slider">
+ <div class="slider">
   <div class="container">
-    <div class="q">
+    <div class="slider__wrapper">
       <div class="slider__list">
         <div v-if="currentSlide===1" class="slide">
           <img class="slider__img" src="/images/1.jpg" alt="img">
@@ -18,29 +18,15 @@
         <div v-if="currentSlide===5" class="slide">
           <img class="slider__img" src="/images/5.jpg" alt="img">
         </div>
+      </div>
     </div>
-    
-
-    </div>
-    
-      
-    
-    
     <div class="slider__btns">
       <button class="slider__btn-next" @click="prev">prev</button>
       <button class="slider__btn-next" @click="next">next</button>
     </div>
-    
-    
-    
+  </div>
  </div>
- 
- 
- 
-</div>
- 
 </template>
-
 <script>
 export default {
     data(){
@@ -66,12 +52,11 @@ export default {
 
 <style >
 
-
 .container{
   max-width: 1200px;
   margin: 0 auto;
 }
-.q{
+.slider__wrapper{
   height: 500px;
   margin-bottom: 100px;
 }
