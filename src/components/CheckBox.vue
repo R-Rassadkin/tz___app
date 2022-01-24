@@ -61,7 +61,6 @@ export default {
     margin-right: 10px;
 }
 .chekbox__btn{
-    
     height: 30px;
     background-color: rgb(116, 238, 100);
     border: 1px solid black;
@@ -74,15 +73,14 @@ export default {
 
 
 
-    @media (max-width:600px) {
-        .checkbox__number{
+@media (max-width:600px) {
+    .checkbox__number{
     margin-top: -10px;
     margin-right: 5px;
-        }
-        .checkbox__item{
-    margin-right: 10px;
-}
-
     }
+    .checkbox__item{
+    margin-right: 10px;
+    }
+}
 
 </style>

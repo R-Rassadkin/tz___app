@@ -4,10 +4,8 @@
         <button class="select__btn-clear" @click="clear">clear</button>
         <button class="select__btn-sorting" @click="btnSplit">sorting</button>
         <input class="select__inpt" type="text" v-model="str">
-        <div >
-          <div class="select__reslt"  v-for="(item,idx) in arr" :key="idx" >
+        <div class="select__reslt"  v-for="(item,idx) in arr" :key="idx" >
            {{item}}
-          </div>
         </div>
     </div>
  </div>
@@ -42,7 +40,6 @@ export default {
   padding: 0 20px;
   margin: 0 auto;
 }
-
 .select{
     display:block;
     text-align:center;

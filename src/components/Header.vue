@@ -14,7 +14,7 @@ import DropDown from '@/components/DropDown.vue'
 
 export default {
   name:'Header',
-  
+
   components:{
     DropDown
   }
@@ -30,8 +30,7 @@ body{
   box-sizing: border-box;
 }
 .header{
-  height:150px;
-  
+  height:155px;
   background-image: url('/images/m.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +46,6 @@ body{
 .logo{
   margin-bottom: -60px;
 }
-
 .header__inpt{
   width: 400px;
   border-radius: 3px;
@@ -83,7 +81,7 @@ body{
     height: 50px;
   }
 
-    }
+}
 @media (max-width:360px) {
   .header__inpt{
     width: 130px;

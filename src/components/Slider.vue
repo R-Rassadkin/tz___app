@@ -1,24 +1,11 @@
 <template>
  <div class="slider">
   <div class="container">
-    <div class="slider__wrapper">
-      <div class="slider__list">
-        <div v-if="currentSlide===1" class="slide">
-          <img class="slider__img" src="/images/1.jpg" alt="img">
-        </div>
-        <div v-if="currentSlide===2" class="slide">
-          <img class="slider__img" src="/images/2.jpg" alt="img">
-        </div>
-        <div v-if="currentSlide===3" class="slide">
-          <img class="slider__img" src="/images/3.jpg" alt="img">
-        </div>
-        <div v-if="currentSlide===4" class="slide">
-          <img class="slider__img" src="/images/4.jpg" alt="img">
-        </div>
-        <div v-if="currentSlide===5" class="slide">
-          <img class="slider__img" src="/images/5.jpg" alt="img">
-        </div>
-      </div>
+    <div class="slider__list"
+    :class="{active__slide: currentSlide === id}" v-for="(item,id) in items"
+    :key=id>
+      <img  class="slide__itm"
+      :src="item.src" alt="slide">
     </div>
     <div class="slider__btns">
       <button class="slider__btn-next" @click="prev">prev</button>
@@ -31,15 +18,23 @@
 export default {
     data(){
         return{
-            currentSlide:1
+          currentSlide:1,
+          items:[
+          {id:1,src:"/images/1.jpg"},
+          {id:2,src:"/images/2.jpg"},
+          {id:3,src:"/images/3.jpg"},
+          {id:4,src:"/images/4.jpg"},
+          {id:5,src:"/images/5.jpg"},
+          ]
         }
     },
     methods:{
       next(){
-      this.currentSlide===5 ? this.currentSlide=1 :this.currentSlide++
+      this.currentSlide===4 ? this.currentSlide=1 :this.currentSlide++
+      console.log(this.currentSlide);
       },
       prev(){
-        this.currentSlide===1 ? this.currentSlide=5 :this.currentSlide--
+        this.currentSlide===1 ? this.currentSlide=4 :this.currentSlide--
         }
     },
     // mounted(){
@@ -61,15 +56,11 @@ export default {
   margin-bottom: 100px;
 }
 .slider__list{
-  
   height: 100%;
-  
   max-width: 700px;
-  display: block;
+  display: none;
   margin: 0 auto;
   padding-top: 50px;
-  
-  
 }
 .slider__btns{
   margin-top: 70px;
@@ -77,7 +68,7 @@ export default {
   text-align: center;
 }
 .slider__btn-next{
-  padding: 0 103px;
+    padding: 0 103px;
     height: 30px;
     background-color: rgb(179, 243, 75);
     border: 1px solid black;
@@ -96,6 +87,15 @@ export default {
   display: none;
 }
 .slider__img{
+  width: 100%;
+}
+.slide{
+  display: none;
+}
+.active__slide{
+  display: block;
+}
+.slide__itm{
   width: 100%;
 }
 @media (max-width: 600px) {
