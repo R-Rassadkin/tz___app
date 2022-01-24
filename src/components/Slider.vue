@@ -56,11 +56,11 @@ export default {
         this.currentSlide===1 ? this.currentSlide=5 :this.currentSlide--
         }
     },
-    // mounted(){
-    //     setInterval(()=>{
-    //         this.currentSlide===5 ? this.currentSlide=1 :this.currentSlide++
-    //     },7000)
-    // }
+    mounted(){
+        setInterval(()=>{
+            this.currentSlide===5 ? this.currentSlide=1 :this.currentSlide++
+        },2000)
+    }
 }
 </script>
 
