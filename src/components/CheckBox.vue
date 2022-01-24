@@ -1,16 +1,13 @@
 <template>
 <div class="container">
     <div class="checkbox">
-        <h2 class="checkbox__result">{{result}}</h2>
+        <h2 class="checkbox__result">{{arrNumbersResult}}</h2>
         <div class="checkbox__list">
             <h1 class="checkbox__number">5</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=5 >
             <h1 class="checkbox__number">8</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=8>
             <h1 class="checkbox__number">12</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=12>
             <h1 class="checkbox__number">15</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=15>
             <h1 class="checkbox__number">22</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=22>
-        </div>
-        <div class="btn__centr">
-            <button class="chekbox__btn" @click="rslt">result</button>
         </div>
     </div>
  </div>
@@ -19,17 +16,16 @@
 export default {
     data(){
         return{
-            arrNumbers:[],
-            result:'',
+            arrNumbers:[]
         }
     },
-    methods:{
-        rslt(){
-            this.result=this.arrNumbers.map(parseFloat).reduce(function (sum,elem) {
+    computed: {
+    arrNumbersResult: function () {
+        return this.arrNumbers.map(parseFloat).reduce(function (sum,elem) {
             return sum + elem
             },0)
-        }
     }
+  }
 }
 </script>
 

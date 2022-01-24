@@ -29,13 +29,18 @@
      <ul class="menu-active"
      :class="{active:activeClassMenu}">
          <li class="menu-active__item"><a href="#" >menu</a></li>
-         <li class="menu-active__item"><a href="#" >about us</a></li>
+         <li class="menu-active__sub-item"><a href="#" >...</a></li>
+         <li class="menu-active__sub-item"><a href="#" >...</a></li>
+         <li class="menu-active__item"><a href="#" >about</a></li>
+         <li class="menu-active__sub-item"><a href="#" >...</a></li>
+         <li class="menu-active__sub-item"><a href="#" >...</a></li>
          <li class="menu-active__item"><a href="#" >contacts</a></li>
-      </ul>
+         <li class="menu-active__sub-item"><a href="#" >...</a></li>
+         <li class="menu-active__sub-item"><a href="#" >...</a></li>
+     </ul>
     </nav> 
  </div>
 </template>
-
 
 <script>
 
@@ -54,6 +59,10 @@ export default {
 </script>
 
 <style>
+ul li{
+    list-style-type: none;
+}
+
 
 .menu{
     display: flex;
@@ -69,7 +78,6 @@ export default {
     
 }
 .menu li{
-    z-index: 10;
     display:inline-block;
     width: 100%;
     list-style-type: none;
@@ -107,29 +115,32 @@ margin-right: 10px;
 
 /* mobile menu */
 .menu-active{
-    
     position: absolute;
     top:80px;
     right: 0;
     width: 100%;
-    background-color: rgb(194, 238, 186);
+    background-color: rgb(79, 172, 63);
     display: block;
     transition: all 0.5s;
-    height: 100%;
+    height: 1700px;
+    text-align: left;
     
 }
 .menu-active__item{
     list-style-type: none;
-    text-align: center;
-    margin-bottom: 100px;
     
 }
+.menu-active__sub-item{
+    margin-left: 20px;
+}
 .menu-active a{
+    text-align: left;
     text-decoration: none;
     color: rgb(5, 5, 5);
     font-size: 90px;
     border-bottom: 3px solid rgb(207, 201, 201);
-    
+    font-weight: 900;
+    margin-left: 10px;
 }
 .menu-active.active{
     transform: translate(-500%);
