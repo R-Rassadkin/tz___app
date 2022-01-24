@@ -5,10 +5,8 @@
         <CheckBox></CheckBox>
         <ListWords></ListWords>
     </div>
-  
-</div>
+  </div>
 
-  
 </template>
 
 <script>
@@ -27,10 +25,7 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-
 .vueForm{
-  
   border: 1px solid black;
   background-color: rgb(193, 235, 195);
   background-size: cover;
@@ -38,7 +33,5 @@ export default {
   margin-top: 50px;
   padding-top: 50px;
 }
-
-
 
 </style>

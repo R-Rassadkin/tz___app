@@ -1,5 +1,5 @@
 <template>
-<div >
+ <div >
     <nav class="side"> 
          <button class="menu__btn"
           :class="{active:activeClassMenu}"
@@ -7,13 +7,11 @@
              <span></span>
          </button>
       <ul class="menu">
-          
-        <li class="menu__link"><a class="menu__link" href="#"><img src="/images/menuu.png" alt="menu">menu</a> 
-          <ul class="menu__drop" >
+          <li class="menu__link"><a class="menu__link" href="#"><img src="/images/menuu.png" alt="menu">menu</a> 
+            <ul class="menu__drop" >
               <li><a href="#">catalog</a></li>
               <li><a href="#">catalog</a></li>
-              
-          </ul>
+            </ul>
         </li>
         <li ><a class="menu__link"><img src="/images/about.png" alt="menu">about us</a>
           <ul class="menu__drop" >
@@ -30,16 +28,12 @@
       </ul>
      <ul class="menu-active"
      :class="{active:activeClassMenu}">
-         
          <li class="menu-active__item"><a href="#" >menu</a></li>
          <li class="menu-active__item"><a href="#" >about us</a></li>
          <li class="menu-active__item"><a href="#" >contacts</a></li>
-         
-        
-     </ul>
-     </nav> 
-</div>
-  
+      </ul>
+    </nav> 
+ </div>
 </template>
 
 
@@ -56,7 +50,6 @@ export default {
             this.activeClassMenu = !this.activeClassMenu
         }
     }
-
 }
 </script>
 

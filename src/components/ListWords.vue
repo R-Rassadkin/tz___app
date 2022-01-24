@@ -1,5 +1,5 @@
 <template>
-<div class="select">
+ <div class="select">
     <div class="container">
         <button class="select__btn-clear" @click="clear">clear</button>
         <button class="select__btn-sorting" @click="btnSplit">sorting</button>
@@ -10,8 +10,7 @@
           </div>
         </div>
     </div>
-</div>
-
+ </div>
 </template>
 <script>
 export default {

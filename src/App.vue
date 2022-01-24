@@ -4,8 +4,7 @@
   <Slider></Slider>
   <VueForm></VueForm>
   <footer>
-    
-      <div class="footer">
+    <div class="footer">
         <div class="container">
           <div class="footer__box">
             <p class="footer__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione alias id voluptatem fugiat, iusto dolores eos distinctio consectetur tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus labore sit.</p>
@@ -14,13 +13,7 @@
           </div>
         </div>
       </div>
-    
   </footer>
-  
-  
-  
-
-  
 </div>
   
   
@@ -76,10 +69,6 @@ li ul{
     .footer__box{
       display: flex;
       flex-direction: column
-      
-  
-}
-
-
     }
+  }
 </style>

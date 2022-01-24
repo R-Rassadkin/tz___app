@@ -56,7 +56,7 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
 }
-.slider__wrapper{
+.slider__wrappernpm{
   height: 500px;
   margin-bottom: 100px;
 }

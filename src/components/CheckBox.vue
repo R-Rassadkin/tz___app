@@ -12,12 +12,8 @@
         <div class="btn__centr">
             <button class="chekbox__btn" @click="rslt">result</button>
         </div>
-       
-      
-      
     </div>
-</div>
-
+ </div>
 </template>
 <script>
 export default {
@@ -25,7 +21,6 @@ export default {
         return{
             arrNumbers:[],
             result:'',
-            
         }
     },
     methods:{
@@ -44,7 +39,6 @@ export default {
     display: block;
     margin: 0 auto;
     text-align: center;
-    
 }
 .checkbox__result{
     display: block;
