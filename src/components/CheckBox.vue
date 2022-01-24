@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="checkbox">
-        <h1 class="checkbox__result">{{result}}</h1>
+        <h2 class="checkbox__result">{{result}}</h2>
         <div class="checkbox__list">
             <h1 class="checkbox__number">5</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=5 >
             <h1 class="checkbox__number">8</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=8>
@@ -56,6 +56,7 @@ export default {
     background: rgb(172, 250, 185);
     margin-bottom: 20px;
     padding-top: 10px;
+    font-size: 40px;
 }
 .checkbox__list{
     display: flex;

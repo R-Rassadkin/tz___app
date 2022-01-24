@@ -1,11 +1,8 @@
 <template>
 <div class="slider">
   <div class="container">
-    <!-- <div class="slider__btns">
-      <button class="slider__btn-next" @click="prev">prev</button>
-      <button class="slider__btn-next" @click="next">next</button>
-        </div> -->
-    <div class="slider__list">
+    <div class="q">
+      <div class="slider__list">
         <div v-if="currentSlide===1" class="slide">
           <img class="slider__img" src="/images/1.jpg" alt="img">
         </div>
@@ -21,6 +18,17 @@
         <div v-if="currentSlide===5" class="slide">
           <img class="slider__img" src="/images/5.jpg" alt="img">
         </div>
+    </div>
+    
+
+    </div>
+    
+      
+    
+    
+    <div class="slider__btns">
+      <button class="slider__btn-next" @click="prev">prev</button>
+      <button class="slider__btn-next" @click="next">next</button>
     </div>
     
     
@@ -48,11 +56,11 @@ export default {
         this.currentSlide===1 ? this.currentSlide=5 :this.currentSlide--
         }
     },
-    mounted(){
-        setInterval(()=>{
-            this.currentSlide===5 ? this.currentSlide=1 :this.currentSlide++
-        },7000)
-    }
+    // mounted(){
+    //     setInterval(()=>{
+    //         this.currentSlide===5 ? this.currentSlide=1 :this.currentSlide++
+    //     },7000)
+    // }
 }
 </script>
 
@@ -63,10 +71,16 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
 }
+.q{
+  height: 500px;
+  margin-bottom: 100px;
+}
 .slider__list{
-  height: 600px;
+  
+  height: 100%;
+  
   max-width: 700px;
-  display: none;
+  display: block;
   margin: 0 auto;
   padding-top: 50px;
   
@@ -104,8 +118,31 @@ export default {
   .slider__btn-next{
     padding: 0 30px;
     
+    
+  }
+ 
+  .q{
+    height: 400px;
+  }
+  
+}
+@media (max-width: 500px) {
+  .q{
+    height: 300px;
   }
 }
+@media (max-width: 400px) {
+  .q{
+    height: 250px;
+  }
+}
+@media (max-width: 300px) {
+  .q{
+    height: 190px;
+  }
+}
+
+
 
 
 </style>

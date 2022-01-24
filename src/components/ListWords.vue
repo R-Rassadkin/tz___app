@@ -24,10 +24,11 @@ export default {
     },
     methods:{
         btnSplit(){ 
+        
            this.arr=this.str.split(',').sort()
            console.log(this.arr);
-           this.is=true
-    },
+           if (this.arr.length > 4) this.arr.length = 10;
+        },
         clear(){
             this.arr.length=0
             this.str=''
@@ -56,9 +57,9 @@ export default {
     margin-bottom: 30px;
 }
 .select__reslt{
-    background: white;
+    background: rgb(164, 241, 154);
     display: block;
-    width: 208px;
+    width: 245px;
     margin: 0 auto;
     border: 1px solid black;
 }
@@ -92,7 +93,7 @@ export default {
 .select__inpt{
     display: block;
     margin: 0 auto;
-    width: 200px;
+    width: 240px;
 }
 @media (max-width: 400px) {
     .select{

@@ -30,7 +30,8 @@ body{
   box-sizing: border-box;
 }
 .header{
-  width: 100%;
+  height:150px;
+  
   background-image: url('/images/m.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +52,7 @@ body{
   width: 400px;
   border-radius: 3px;
   border: 1px solid rgb(87, 87, 87);
-  margin-left: 110px;
+  margin-left: 100px;
 }
 @media (max-width:600px) {
   .header{
@@ -68,12 +69,18 @@ body{
     right: 50px;
     margin-left: 70px;
   }
+  .header{
+    height: 100px;
+  }
 }
 @media (max-width: 400px) {
   .header__inpt{
     width: 150px;
     height: 30px;
     margin-left: 60px;
+  }
+  .header{
+    height: 50px;
   }
 
     }
@@ -82,6 +89,9 @@ body{
     width: 130px;
     height: 30px;
     margin-left: 50px;
+  }
+  .logo{
+    right: 30px;
   }
 
 }
