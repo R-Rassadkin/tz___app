@@ -1,5 +1,5 @@
 <template>
-<div>
+ <div>
   <Header></Header>
   <Slider></Slider>
   <VueForm></VueForm>
@@ -14,18 +14,13 @@
         </div>
       </div>
   </footer>
-</div>
-  
-  
+ </div>
 </template>
 
 <script>
-
 import Header from '@/components/Header.vue'
 import Slider from '@/components/Slider.vue'
 import VueForm from './components/VueForm.vue'
-
-
 
 export default {
   name: 'App',
@@ -40,7 +35,6 @@ export default {
 <style>
 body{
   height: 100%;
-
 }
 li ul{
   list-style-type: none;

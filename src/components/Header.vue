@@ -91,7 +91,6 @@ body{
   .logo{
     right: 30px;
   }
-
 }
 
 </style>

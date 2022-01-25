@@ -2,7 +2,7 @@
  <div >
     <nav class="side"> 
         <button class="menu__btn"
-         :class="{active:activeClassMenu}"
+         :class="{active:toggleActive}"
          @click="AddActive">
          <span></span>
         </button>
@@ -27,7 +27,7 @@
         </li>
       </ul>
      <ul class="menu-active"
-     :class="{active:activeClassMenu}">
+     :class="{active:toggleActive}">
         <ul class="menu-active__item">
           <a href="#" >menu</a>
           <li class="menu-active__sub-item"><a href="#" >...</a></li>
@@ -53,12 +53,12 @@
 export default {
     data(){
         return{
-            activeClassMenu:false
+            toggleActive:false
         }
     },
     methods:{
         AddActive(){
-            this.activeClassMenu = !this.activeClassMenu
+            this.toggleActive = !this.toggleActive
         }
     }
 }
@@ -147,9 +147,6 @@ ul li{
 .menu-active.active{
     transform: translate(-500%);
 }
-
-
-
 @media  (max-width:600px) {
     .menu-active{
         top: 127px;

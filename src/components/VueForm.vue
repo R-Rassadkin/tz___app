@@ -1,12 +1,10 @@
 <template>
-
   <div class="vueForm">
     <div class="container">
         <CheckBox></CheckBox>
         <ListWords></ListWords>
     </div>
   </div>
-
 </template>
 
 <script>

@@ -3,11 +3,11 @@
     <div class="checkbox">
         <h2 class="checkbox__result">{{arrNumbersResult}}</h2>
         <div class="checkbox__list">
-            <h1 class="checkbox__number">5</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=5 >
-            <h1 class="checkbox__number">8</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=8>
-            <h1 class="checkbox__number">12</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=12>
-            <h1 class="checkbox__number">15</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=15>
-            <h1 class="checkbox__number">22</h1><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=22>
+            <h2 class="checkbox__number">5</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=5 >
+            <h2 class="checkbox__number">8</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=8>
+            <h2 class="checkbox__number">12</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=12>
+            <h2 class="checkbox__number">15</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=15>
+            <h2 class="checkbox__number">22</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=22>
         </div>
     </div>
  </div>

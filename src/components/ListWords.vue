@@ -21,10 +21,8 @@ export default {
     },
     methods:{
         btnSplit(){ 
-        
            this.arr=this.str.split(',').sort()
-           console.log(this.arr);
-           if (this.arr.length > 4) this.arr.length = 10;
+           this.arr.length = 10;
         },
         clear(){
             this.arr.length=0
