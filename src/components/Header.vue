@@ -22,16 +22,19 @@ export default {
 </script>
 
 <style>
+*{
+  box-sizing: border-box;
+}
+
 body{
-  background-image: url('/images/qqqq.jpg');
+  background-image: url('/images/bg-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  box-sizing: border-box;
 }
 .header{
   height:155px;
-  background-image: url('/images/m.jpg');
+  background-image: url('/images/header-sky.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 3px solid rgb(90, 100, 88);
@@ -57,18 +60,18 @@ body{
     padding-top:40px ;
   }
   .header__inpt{
-    width: 200px;
+    width: 180px;
     height: 30px;
     margin-left: 80px;
   }
   .logo{
     position: absolute;
-    top:40px;
+    top:30px;
     right: 50px;
     margin-left: 70px;
   }
   .header{
-    height: 100px;
+    height: 101px;
   }
 }
 @media (max-width: 400px) {
@@ -78,7 +81,7 @@ body{
     margin-left: 60px;
   }
   .header{
-    height: 50px;
+    height: 93px;
   }
 
 }
@@ -92,6 +95,8 @@ body{
     right: 30px;
   }
 }
+
+
 
 </style>
 

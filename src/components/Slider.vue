@@ -1,11 +1,13 @@
 <template>
+
  <div class="slider">
   <div class="container">
     <div class="slider__list"
-    :class="{active__slide: currentSlide === id}" v-for="(item,id) in items"
+    :class="{active__slide: currentSlide === id}" 
+    v-for="(item,id) in items"
     :key=id>
-      <img  class="slide__itm"
-      :src="item.src" alt="slide">
+     <img  class="slide__itm"
+     :src="item.src" alt="slide">
     </div>
     <div class="slider__btns">
       <button class="slider__btn-next" @click="prev">prev</button>
@@ -13,6 +15,7 @@
     </div>
   </div>
  </div>
+
 </template>
 <script>
 export default {
@@ -39,7 +42,7 @@ export default {
     },
     // mounted(){
     //     setInterval(()=>{
-    //         this.currentSlide===5 ? this.currentSlide=1 :this.currentSlide++
+    //         this.currentSlide===4 ? this.currentSlide=1 :this.currentSlide++
     //     },2000)
     // }
 }

@@ -7,19 +7,19 @@
          <span></span>
         </button>
       <ul class="menu">
-          <li class="menu__link"><a class="menu__link" href="#"><img src="/images/menuu.png" alt="menu">menu</a> 
+          <li><a href="#"><img src="/images/menuu.png" alt="menu">menu</a> 
             <ul class="menu__drop" >
               <li><a href="#">...</a></li>
               <li><a href="#">...</a></li>
             </ul>
         </li>
-        <li ><a class="menu__link"><img src="/images/about.png" alt="menu">about us</a>
+          <li><a href="#"><img src="/images/about.png" alt="about">about us</a>
           <ul class="menu__drop" >
               <li><a href="#">...</a></li>
               <li><a href="#">...</a></li>
           </ul>
         </li>
-        <li><a class="menu__link" href="#"><img src="/images/social.png" alt="menu">contacts</a>
+          <li><a href="#"><img src="/images/social.png" alt="social">contacts</a>
           <ul class="menu__drop" >
               <li><a href="#">...</a></li>
               <li><a href="#">...</a></li>
@@ -46,6 +46,7 @@
      </ul>
     </nav> 
  </div>
+
 </template>
 
 <script>
@@ -147,9 +148,14 @@ ul li{
 .menu-active.active{
     transform: translate(-500%);
 }
+@media  (max-width:810px) {
+    .menu a{
+        font-size: 15px;
+    }
+}
 @media  (max-width:600px) {
     .menu-active{
-        top: 127px;
+        top: 85px;
     }
     .menu__btn {
         display:inline-block;
@@ -190,11 +196,6 @@ ul li{
 @media  (max-width:400px) {
     .menu-active{
         top: 77px;
-    }
-}
-@media  (max-width:810px) {
-    .menu a{
-        font-size: 15px;
     }
 }
 

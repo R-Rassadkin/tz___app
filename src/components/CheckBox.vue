@@ -1,22 +1,37 @@
 <template>
-<div class="container">
-    <div class="checkbox">
-        <h2 class="checkbox__result">{{arrNumbersResult}}</h2>
-        <div class="checkbox__list">
-            <h2 class="checkbox__number">5</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=5 >
-            <h2 class="checkbox__number">8</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=8>
-            <h2 class="checkbox__number">12</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=12>
-            <h2 class="checkbox__number">15</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=15>
-            <h2 class="checkbox__number">22</h2><input class="checkbox__item" v-model="arrNumbers" type="checkbox" value=22>
-        </div>
+
+<div class="checkbox">
+  <div class="checkbox__result">
+    {{arrNumbersResult}}
+  </div>
+  <div class="checkbox__list">
+    <div  
+    v-for="(item,id) in arrCheckbox"
+    :key=id>
+    <input class="checkbox__inpt" 
+    type="checkbox"
+    v-model="arrNumbers"
+    :value="item.value">
+    <h2 class="checkbox__value">
+      {{item.value}}
+    </h2>
     </div>
- </div>
+  </div>
+</div>
+ 
 </template>
+
 <script>
 export default {
     data(){
         return{
-            arrNumbers:[]
+            arrNumbers:[],
+            arrCheckbox:[
+                {id:1,value:5},
+                {id:2,value:8},
+                {id:3,value:15},
+                {id:4,value:22}
+            ]
         }
     },
     computed: {
@@ -30,48 +45,36 @@ export default {
 </script>
 
 <style>
-
 .checkbox{
+    color: rgb(53, 53, 53);
+}
+
+.checkbox__list{
+    display: flex;
+    justify-content: center;
+    margin-left: 45px;
+}
+.checkbox__inpt{
     display: block;
-    margin: 0 auto;
-    text-align: center;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.checkbox__value{
+    margin-top: -10px;
+    margin-right: 10px;
 }
 .checkbox__result{
     display: block;
-    text-align: center;
     margin: 0 auto;
+    margin-bottom: 50px;
     width: 50px;
     height: 50px;
     border:1px solid black ;
     background: rgb(172, 250, 185);
-    margin-bottom: 20px;
-    padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 40px;
+    text-align: center;
 }
-.checkbox__list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.checkbox__item{
-    margin-right: 50px;
-}
-.checkbox__number{
-    margin-top: -10px;
-    margin-right: 10px;
-}
-.chekbox__btn{
-    height: 30px;
-    background-color: rgb(116, 238, 100);
-    border: 1px solid black;
-    font-weight: 700;
-    border-radius:10px;
-    align-items: center;
-    display: inline-block;
-    width: 100px;
-}
-
-
 
 @media (max-width:600px) {
     .checkbox__number{

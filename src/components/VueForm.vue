@@ -30,6 +30,7 @@ export default {
   background-repeat: no-repeat;
   margin-top: 50px;
   padding-top: 50px;
+  display: block;
 }
 
 </style>
