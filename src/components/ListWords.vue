@@ -31,6 +31,7 @@ export default {
     methods:{
         btnSplit(){ 
            this.arr=this.str.split(',').sort()
+           this.arr.length=10
         },
         clear(){
             this.arr.length=0
