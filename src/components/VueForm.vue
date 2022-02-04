@@ -18,19 +18,8 @@ export default {
 }
 </script>
 
-<style>
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.vueForm{
-  border: 1px solid black;
-  background-color: rgb(193, 235, 195);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  padding-top: 50px;
-  display: block;
-}
+<style lang="scss">
+
+@import '@/assets/style/vueForm.scss'
 
 </style>

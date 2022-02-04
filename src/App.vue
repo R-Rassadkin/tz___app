@@ -30,11 +30,10 @@ export default {
 
 <style>
 body{
-  height: 100%;
-}
-li ul{
-  list-style-type: none;
-  text-decoration: none;
+  background-image: url('/images/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
 }
 .container{
   max-width: 1200px;

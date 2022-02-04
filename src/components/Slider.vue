@@ -48,80 +48,12 @@ export default {
 }
 </script>
 
-<style >
+ 
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.slider__wrapper{
-  height: 500px;
-  margin-bottom: 100px;
-}
-.slider__list{
-  height: 100%;
-  max-width: 700px;
-  display: none;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-.slider__btns{
-  margin-top: 70px;
-  display: block;
-  text-align: center;
-}
-.slider__btn-next{
-    padding: 0 103px;
-    height: 30px;
-    background-color: rgb(179, 243, 75);
-    border: 1px solid black;
-    font-weight: 700;
-    border-radius:10px;
-    align-items: center;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    display: inline-block
-}
-.slider__btn-next:hover{
-  background-color: rgb(221, 221, 95);
-}
-.slider__btn{
-  display: none;
-}
-.slider__img{
-  width: 100%;
-}
-.slide{
-  display: none;
-}
-.active__slide{
-  display: block;
-}
-.slide__itm{
-  width: 100%;
-}
-@media (max-width: 600px) {
-  .slider__btn-next{
-    padding: 0 30px;
-  }
-  .slider__wrapper{
-    height: 400px;
-  }
-}
-@media (max-width: 500px) {
-  .slider__wrapper{
-    height: 300px;
-  }
-}
-@media (max-width: 400px) {
-  .slider__wrapper{
-    height: 250px;
-  }
-}
-@media (max-width: 300px) {
-  .slider__wrapper{
-    height: 190px;
-  }
-}
+
+
+<style  lang="scss">
+
+@import '@/assets/style/Slider.scss'
+
 </style>

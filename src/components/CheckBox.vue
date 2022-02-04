@@ -8,7 +8,7 @@
     <div  
     v-for="(item,id) in arrCheckbox"
     :key=id>
-    <input class="checkbox__inpt" 
+    <input class="checkbox__input" 
     type="checkbox"
     v-model="arrNumbers"
     :value="item.value">
@@ -44,46 +44,8 @@ export default {
 }
 </script>
 
-<style>
-.checkbox{
-    color: rgb(53, 53, 53);
-}
+<style lang="scss">
 
-.checkbox__list{
-    display: flex;
-    justify-content: center;
-    margin-left: 45px;
-}
-.checkbox__inpt{
-    display: block;
-    margin-right: 50px;
-    margin-bottom: 20px;
-}
-.checkbox__value{
-    margin-top: -10px;
-    margin-right: 10px;
-}
-.checkbox__result{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 50px;
-    height: 50px;
-    border:1px solid black ;
-    background: rgb(172, 250, 185);
-    padding-bottom: 20px;
-    font-size: 40px;
-    text-align: center;
-}
-
-@media (max-width:600px) {
-    .checkbox__number{
-    margin-top: -10px;
-    margin-right: 5px;
-    }
-    .checkbox__item{
-    margin-right: 10px;
-    }
-}
+@import '@/assets/style/checkbox.scss'
 
 </style>
